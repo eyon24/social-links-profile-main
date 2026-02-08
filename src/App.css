@@ -83,10 +83,25 @@
   line-height: 150%;
 }
 
-.card .links a:active {
+.card .links a:hover {
   background-color: var(--Green);
   color: var(--Grey-900);
   transition:
     background-color 0.3s,
     color 0.3s;
+}
+
+.card .links a:active {
+  background-color: var(--Grey-700);
+  color: var(--Green);
+  transition:
+    background-color 0.1s,
+    color 0.1s;
+}
+
+@media (min-width: 1080px) {
+  .card {
+    width: 370px;
+    padding: 32px;
+  }
 }
